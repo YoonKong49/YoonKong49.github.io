@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <title>Creating a Voice for the Voiceless: AI-Driven TTS System</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Creating a Voice for the Voiceless: AI-Driven TTS System</h1>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <p>The inspiration behind this project emerged from a desire to bridge a gap I saw every day—how
+                    communication can often fail those who lack a voice in more ways than one. While technology has
+                    given us tools to connect, communicate, and collaborate from opposite ends of the world, it has also
+                    overlooked those with speech disabilities. Many of us take the ability to express ourselves for
+                    granted, whether through spoken words, gestures, or even the inflection in our tone. But what if you
+                    couldn’t communicate how you truly felt?</p>
+
+                <p>That's when I realized there was an opportunity to create something meaningful: a Text-to-Speech
+                    (TTS) system that doesn’t just generate robotic sounds but speaks <em>with</em> the user, conveying
+                    emotions that reflect their feelings and personality. It was a project that, if successful, could
+                    empower mute individuals to express their emotions vividly on platforms like Discord or Zoom. This
+                    wasn’t just about technology; it was about creating a voice for the voiceless.</p>
+
+                <h2>Taking the First Steps: Building the Foundation</h2>
+                <p>The foundation of this system is built on several critical technologies, each serving a specific
+                    purpose to bring the overall vision to life. Here’s how the technical side unfolded:</p>
+
+                <h3>OpenCV: Capturing Real-Time Emotions</h3>
+                <p>The journey started with OpenCV, an open-source computer vision library, which acted as the eyes of
+                    the system. OpenCV handles real-time video capture and facial detection, allowing the system to
+                    identify the user’s face and extract key features such as the eyes, mouth, and eyebrows. These
+                    features are then analyzed frame-by-frame to capture subtle shifts in the user’s expressions.</p>
+
+                <h3>TensorFlow: Analyzing Facial Expressions</h3>
+                <p>Once the facial data is captured, the next step is to interpret it. That’s where TensorFlow comes in.
+                    I utilized a pre-trained model from the FER (Facial Expression Recognition) library, which is
+                    specifically designed to identify emotions like happiness, sadness, anger, and surprise. TensorFlow,
+                    the backbone of this analysis, processes the incoming video data and classifies the detected
+                    expressions into emotional states.</p>
+
+                <h3>TTS Integration: Giving Life to the Emotions</h3>
+                <p>With the emotion detection in place, the next challenge was mapping those emotions into speech
+                    patterns. It’s not enough to have a synthesized voice say words; it needs to <em>feel</em> like
+                    there’s a human behind those words. This is where I turned to ElevenLabs’ TTS system, which provides
+                    advanced control over the voice’s pitch, speed, and tone. By dynamically adjusting these parameters
+                    based on the detected emotions, I could create speech that was upbeat when the user was happy,
+                    soothing when they were calm, and even harsh or tense when the user was upset.</p>
+
+                <h2>Overcoming Challenges: The Roadblocks</h2>
+                <p>This project hasn’t been without its setbacks. One of the biggest challenges has been the emotion
+                    detection model’s tendency to classify many expressions as “natural” or “neutral.” This led to
+                    speech that sounded flat, devoid of the emotional depth I wanted to achieve. I explored various
+                    solutions, such as parameter tuning and experimenting with different model architectures, but it’s
+                    still an ongoing process.</p>
+
+                <p>Another challenge was synchronizing the TTS output with the detected emotions in real-time. Human
+                    speech is complex, and slight delays or mismatches in emotion can make the voice sound disjointed
+                    and robotic. Addressing this required a deeper dive into both the machine learning model and the TTS
+                    engine, fine-tuning the timing to make the speech feel fluid and natural.</p>
+
+                <h2>Why This Project Matters</h2>
+                <p>For many, the ability to speak their mind is second nature. But for those who cannot, the world can
+                    feel isolating and silent. This project isn’t just about building a cool tech demo—it’s about
+                    breaking down barriers, giving people a voice that is truly <em>theirs</em>. It’s about capturing
+                    the essence of what makes each of us human: the ability to express emotions, not just thoughts.</p>
+
+                <p>Working on this project has been more than just a technical challenge. It has been a lesson in
+                    empathy and a reminder of the role technology can play in empowering those around us. With each
+                    breakthrough, I feel closer to a system that doesn’t just <em>speak</em> for users but <em>speaks
+                        as</em> them.</p>
+
+                <h2>Looking Ahead</h2>
+                <p>There’s still a long road ahead, but the potential impact keeps me going. I envision a future where
+                    this system is used not just by mute individuals but by anyone who wants to communicate more vividly
+                    and authentically. As the project evolves, I’ll continue sharing updates, refining the technology,
+                    and hopefully, helping a few more people find their voice.</p>
+
+                <img src="/assets/imgs/tts_project.png" alt="AI-Driven TTS System" style="width:300px; height:auto;">
+            </div>
+            <div id="footer">
+                <p><strong>Learn more about the technologies and projects:</strong></p>
+                <ul>
+                    <li><a href="https://opencv.org/" target="_blank">Explore OpenCV</a></li>
+                    <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow Official Site</a></li>
+                    <li><a href="https://elevenlabs.io/" target="_blank">Learn About ElevenLabs TTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
