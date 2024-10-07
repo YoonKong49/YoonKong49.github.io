@@ -17,3 +17,27 @@ div#content{float:left;width:500px}
 div#navigation{float:right;width:200px}
 div#extra{float:left;width:500px}
 div#footer{clear:both;width:100%}
+#video-section {
+    display: flex;
+    flex-direction: column;
+    /* Stack videos vertically */
+    align-items: flex-start;
+    /* Align videos to the left */
+    gap: 20px;
+    /* Space between video elements */
+    margin-bottom: 20px;
+    width: 500px;
+    /* Match the content width */
+}
+
+.video-container {
+    text-align: left;
+    /* Align video titles with the text */
+}
+
+figcaption {
+    font-weight: bold;
+    /* Make the video titles bold */
+    margin-top: 10px;
+    /* Add spacing above the titles */
+}
